@@ -1,0 +1,17 @@
+# Inclui todas as dependências de produção
+-r requirements.txt
+
+# --- Development & Testing ---
+# Para rodar e experimentar no Jupyter Notebook (nossa pasta /notebooks).
+notebook~=7.1.2
+
+# O kernel que permite ao Jupyter se conectar ao nosso ambiente virtual.
+ipykernel~=6.29.3
+
+# (Opcional) Um formatador de código Python para manter o estilo consistente.
+black~=24.4.2
+
+# (Opcional) Um linter extremamente rápido para encontrar erros e melhorar o código.
+ruff~=0.4.2
+
+pytest

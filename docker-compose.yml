@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: amda_scout_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: amda_user
+      POSTGRES_PASSWORD: amda_password
+      POSTGRES_DB: amda_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:rw
+      - postgres_data:/var/lib/postgresql/data:rw
+
+volumes:
+  postgres_data:

@@ -1,0 +1,32 @@
+# --- Core LangChain Framework ---
+# O pacote principal que contém a lógica de orquestração e agentes.
+langchain~=0.1.20
+
+# Pacote com integrações da comunidade, incluindo nosso LLM (Ollama).
+langchain-community~=0.0.38
+
+# O núcleo do LangChain, com as definições de schemas (LLM, ChatMessage, etc.).
+langchain-core~=0.1.52
+
+# Permite puxar prompts e outros componentes pré-construídos do LangChain Hub.
+langchainhub~=0.1.15
+
+
+# --- LLM Provider (Ollama) ---
+# O cliente Python oficial para interagir com o serviço do Ollama.
+# Usado pelo LangChain para se comunicar com o modelo Gemma local.
+ollama~=0.2.0
+
+
+# --- Database Interaction (SQLAlchemy) ---
+# A biblioteca principal para conectar e interagir com bancos de dados SQL de forma agnóstica.
+SQLAlchemy~=2.0.29
+
+# O "driver" específico para conectar ao PostgreSQL (ou Redshift).
+# Use 'psycopg2-binary' para uma instalação mais simples com dependências pré-compiladas.
+psycopg2-binary~=2.9.9
+
+
+# --- Utilities ---
+# Para carregar variáveis de ambiente de um arquivo .env para as configurações.
+python-dotenv~=1.0.1
